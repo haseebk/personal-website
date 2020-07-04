@@ -58,11 +58,6 @@ typings/
 .next
 
 
-.cache/
-public/
-.gatsby-context.js
-netlify.toml
-
 # mac FS
 .DS_Store
 .vscode/
