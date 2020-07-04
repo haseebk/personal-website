@@ -1,1 +1,5 @@
-"# my-website" 
+# Gatsby Starter: Mate
+
+## License 📝
+
+MIT.
