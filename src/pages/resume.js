@@ -56,7 +56,7 @@ const Resume = ({ resume }) => (
       <embed
         src={ResumePDF}
         type="application/pdf"
-        width="100vh"
+        width="100%"
         height="700px"
       />
     </Section.Container>
