@@ -39,7 +39,7 @@ const Resume = ({ resume }) => (
           src={ResumePDF}
           type="application/pdf"
           width="100%"
-          height="1100px"
+          height="100%"
         />
         </Box>
     </Section.Container>
