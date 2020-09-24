@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
+import Header from '../components/Header';
 
 
 const Background = () => (
@@ -35,9 +36,10 @@ const Resume = ({
   resume
 }) => (
   <Layout>
+    <Header />
     <Section.Container id="Resume" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
-          <embed src={ResumePDF} type="application/pdf" width="100%" height="600px"/>
+          <embed src={ResumePDF} type="application/pdf" width="100%" height="100%"/>
       </Box>
     </Section.Container>
   </Layout>
