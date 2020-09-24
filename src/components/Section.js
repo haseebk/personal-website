@@ -22,8 +22,32 @@ const SectionContainer = styled.div`
     padding: 2em 1em;
   }
 `;
+const SectionContainerTest = styled.div`
+  min-height: 320px;
+  max-height: 100vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  margin: auto;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 1em;
+  scroll-behavior: smooth;
+
+  @media (max-width: 400px) {
+    padding: 2em 1em;
+  }
+`;
 
 const DefaultBackground = () => <div />;
+
+const ContainerTest = ({ id, children, Background = DefaultBackground }) => (
+  <Section id={id} style={{ position: 'relative' }}>
+    <Background />
+    <SectionContainerTest>{children}</SectionContainerTest>
+  </Section>
+);
 
 const Container = ({ id, children, Background = DefaultBackground }) => (
   <Section id={id} style={{ position: 'relative' }}>
