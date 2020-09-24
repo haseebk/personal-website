@@ -53,12 +53,12 @@ const Resume = ({ resume }) => (
         </Box>
     </Section.Container> */}
 
-    <Section.Container id="Resume" Background={Background}>
+    <Section.Container id="Resume" Background={Background} height="100%">
       <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
-        height="1000%"
+        height="100%"
       />
     </Section.Container>
   </Layout>
