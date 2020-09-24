@@ -6,6 +6,12 @@ import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
 import Footer from '../components/Footer';
 
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 const Background = () => (
   <div>
     <Triangle
@@ -33,7 +39,6 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
-    <div style="width: 100%; height: 100%">
       <embed
         src={ResumePDF}
         width="100%"
@@ -41,8 +46,8 @@ const Resume = ({ resume }) => (
         type="application/pdf"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
+        style="min-height:100vh;width:100%"
       ></embed>
-    </div>
 
     {/* <Section.Container id="Resume" Background={Background}>
         <Box m="auto">
