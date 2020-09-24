@@ -3,7 +3,7 @@ import { Heading, Box } from 'rebass/styled-components';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
-import Resume from './resume/resume.pdf';
+import ResumePDF from './resume/resume.pdf';
 
 
 const Background = () => (
@@ -37,7 +37,7 @@ const Resume = ({
   <Layout>
     <Section.Container id="Resume" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
-          <embed src={resume} type="application/pdf" width="100%" height="600px"/>
+          <embed src={ResumePDF} type="application/pdf" width="100%" height="600px"/>
       </Box>
     </Section.Container>
   </Layout>
