@@ -6,12 +6,6 @@ import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
 import Footer from '../components/Footer';
 
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 const Background = () => (
   <div>
     <Triangle
