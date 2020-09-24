@@ -33,11 +33,11 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
-    <div id="resumePDF">
+    <div id="resumePDF" style="overflow:hidden;height:100%;">
       <embed
         src={ResumePDF}
         width="100%"
-        height="100%"
+        height="100vh"
         type="application/pdf"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
