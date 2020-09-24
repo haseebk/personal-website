@@ -33,14 +33,17 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
-    <embed src={ResumePDF} 
-    width="100%" 
-    height="100%"
-    type="application/pdf"
-    title="resume"
-    data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1">
+    <div style="width: 100%; height: 100%">
+      <embed
+        src={ResumePDF}
+        width="100%"
+        height="100%"
+        type="application/pdf"
+        title="resume"
+        data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
+      ></embed>
+    </div>
 
-    </embed>
     {/* <Section.Container id="Resume" Background={Background}>
         <Box m="auto">
           <embed
