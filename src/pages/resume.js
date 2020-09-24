@@ -29,7 +29,9 @@ const Background = () => (
   </div>
 );
 
-const Resume = () => (
+const Resume = ({
+  resume
+}) => (
   <Layout>
     <Section.Container id="Resume" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
@@ -38,6 +40,10 @@ const Resume = () => (
           fontSize={['8rem', '12rem', '14rem']}
           as="h1"
         >
+          <embed src="resume/resume.pdf#toolbar=0" type="application/pdf" width="100%" height="600px"/>
+            {/* <a id="resume" href="resume/Muhammad Tariq - Resume.pdf">Resume</a> */}
+
+
           Resume
         </Heading>
       </Box>
