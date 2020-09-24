@@ -36,7 +36,7 @@ const Resume = ({ resume }) => (
       <embed
         src={ResumePDF}
         width="100%"
-        height="50vw"
+        height="150vw"
         type="application/pdf"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
