@@ -5,6 +5,10 @@ import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
 import Footer from '../components/Footer';
+const fullHeight = () =>(
+  height="100vh"
+
+);
 
 const Background = () => (
   <div>
@@ -32,7 +36,7 @@ const Background = () => (
 );
 
 const Resume = ({ resume }) => (
-  <Layout>
+  <Layout height="100vh">
 
     {/* <embed
         src={ResumePDF}
@@ -53,7 +57,7 @@ const Resume = ({ resume }) => (
         </Box>
     </Section.Container> */}
 
-    <Section.Container id="Resume" Background={Background} height="100%">
+    <Section.Container id="Resume" Background={Background} height="100vh">
       <embed
         src={ResumePDF}
         type="application/pdf"
