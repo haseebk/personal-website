@@ -3,6 +3,8 @@ import { Heading, Box } from 'rebass/styled-components';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
+import Resume from './resume/resume.pdf';
+
 
 const Background = () => (
   <div>
@@ -35,17 +37,7 @@ const Resume = ({
   <Layout>
     <Section.Container id="Resume" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
-        <Heading
-          color="primaryDark"
-          fontSize={['8rem', '12rem', '14rem']}
-          as="h1"
-        >
-          <embed src="resume/resume.pdf#toolbar=0" type="application/pdf" width="100%" height="600px"/>
-            {/* <a id="resume" href="resume/Muhammad Tariq - Resume.pdf">Resume</a> */}
-
-
-          Resume
-        </Heading>
+          <embed src={resume} type="application/pdf" width="100%" height="600px"/>
       </Box>
     </Section.Container>
   </Layout>
