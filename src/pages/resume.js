@@ -1,14 +1,8 @@
 import React from 'react';
-import { Heading, Box } from 'rebass/styled-components';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
-import Footer from '../components/Footer';
-const fullHeight = () =>(
-  height="100vh"
-
-);
 
 const Background = () => (
   <div>
@@ -39,22 +33,12 @@ const Resume = ({ resume }) => (
   <Layout>
     <embed
         src={ResumePDF}
+        type="application/pdf"
         width="100%"
         height="600px"
-        type="application/pdf"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
       ></embed>
-
-    {/* <Section.Container id="Resume" Background={Background}>
-        <Box m="auto">
-          <embed
-          src={ResumePDF}
-          type="application/pdf"
-          width="100%"
-        />
-        </Box>
-    </Section.Container> */}
 
     {/* <Section.Container id="Resume" Background={Background}>
       <embed
