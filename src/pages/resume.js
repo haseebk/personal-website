@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Background = () => (
   <div>
