@@ -42,7 +42,7 @@ const Resume = ({ resume }) => (
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
       ></embed> */}
 
-    <Section.Container id="Resume" Background={Background}>
+    {/* <Section.Container id="Resume" Background={Background}>
         <Box m="auto">
           <embed
           src={ResumePDF}
@@ -50,6 +50,13 @@ const Resume = ({ resume }) => (
           width="100%"
         />
         </Box>
+    </Section.Container> */}
+        <Section.Container id="Resume" Background={Background}>
+          <embed
+          src={ResumePDF}
+          type="application/pdf"
+          width="100%"
+        />
     </Section.Container>
   </Layout>
 );
