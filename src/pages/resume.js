@@ -36,12 +36,14 @@ const Resume = ({ resume }) => (
   <Layout>
     <Header />
     <Section.Container id="Resume" Background={Background}>
-        <embed
+        <Box width={[320, 400, 600]} m="auto">
+          <embed
           src={ResumePDF}
           type="application/pdf"
-          width="1000px"
+          width="600px"
           height="100%"
         />
+        </Box>
     </Section.Container>
     <Footer />
   </Layout>

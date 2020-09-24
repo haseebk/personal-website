@@ -61,6 +61,7 @@ const Footer = () => (
               <TextFooter fontSize={[2, 3]}>
                 <span>{`${name} - Built using Mate by `}</span>
                 <Link href="https://emasuriano.com/">Ema Suriano</Link> 
+                <span>. </span>
                 <span>{`Powered by `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
                 <span>, </span>
