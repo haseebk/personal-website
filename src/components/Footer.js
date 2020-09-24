@@ -59,7 +59,9 @@ const Footer = () => (
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>
-                <span>{`${name} - Powered by `}</span>
+                <span>{`${name} - Built using Mate by `}
+				<Link href="https://emasuriano.com/">Ema Suriano</Link> 
+				<span>{`Powered by `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
                 <span>, </span>
                 <Link href="https://www.contentful.com/" mr={1}>
