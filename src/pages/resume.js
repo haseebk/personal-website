@@ -33,6 +33,11 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
+    <div id="resumePDF">
+      <script src={ResumePDF}></script>
+      <script>PDFObject.embed("/resume", "#resumePDF");</script>
+    </div>
+
     {/* <embed
         src={ResumePDF}
         width="100%"
@@ -52,14 +57,14 @@ const Resume = ({ resume }) => (
         </Box>
     </Section.Container> */}
 
-    <Section.Container id="Resume" Background={Background}>
+    {/* <Section.Container id="Resume" Background={Background}>
       <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
-        height="700px"
+        height="100vh"
       />
-    </Section.Container>
+    </Section.Container> */}
   </Layout>
 );
 
