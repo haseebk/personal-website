@@ -37,14 +37,16 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout height="100vh">
-
+    <object width="400" height="500" type="application/pdf" data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0">
+      <p>Something is not right</p>
+      </object> 
     {/* <embed
         src={ResumePDF}
         width="100%"
         height="100%"
         type="application/pdf"
         title="resume"
-        data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
+        data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
       ></embed> */}
 
     {/* <Section.Container id="Resume" Background={Background}>
@@ -57,14 +59,14 @@ const Resume = ({ resume }) => (
         </Box>
     </Section.Container> */}
 
-    <Section.Container id="Resume" Background={Background} height="100vh">
+    {/* <Section.Container id="Resume" Background={Background}>
       <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
         height="100%"
       />
-    </Section.Container>
+    </Section.Container> */}
   </Layout>
 );
 
