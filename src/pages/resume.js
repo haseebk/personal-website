@@ -40,7 +40,6 @@ const Resume = ({ resume }) => (
         type="application/pdf"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=1"
-        style="min-height:100vh;width:100%"
       ></embed>
 
     {/* <Section.Container id="Resume" Background={Background}>
