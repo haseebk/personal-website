@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const Background = () => (
@@ -16,14 +15,14 @@ const Background = () => (
     />
 
     <Triangle
-      color="primary"
+      color="secondary"
       height={['25vh', '35vh']}
       width={['75vw', '60vw']}
       invertX
     />
 
     <Triangle
-      color="secondaryLight"
+      color="primaryDark"
       height={['10vh', '20vh']}
       width={['50vw', '50vw']}
       invertX
@@ -34,18 +33,16 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
-    <Header />
     <Section.Container id="Resume" Background={Background}>
-        <Box width={[320, 400, 600]} m="auto">
+        <Box m="auto">
           <embed
           src={ResumePDF}
           type="application/pdf"
-          width="600px"
-          height="100%"
+          width="100%"
+          height="1100px"
         />
         </Box>
     </Section.Container>
-    <Footer />
   </Layout>
 );
 
