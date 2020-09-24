@@ -36,7 +36,8 @@ const Resume = ({ resume }) => (
     <Section.Container id="Resume" Background={Background}>
         <Box m="auto">
           <embed
-          src={ResumePDF}
+          // src={ResumePDF}
+          src="/resume/resume.pdf#view=FitH"
           type="application/pdf"
           width="100%"
           height="100%"
