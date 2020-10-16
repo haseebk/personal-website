@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import RLayout from '../components/RLayout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
@@ -31,12 +31,12 @@ const Background = () => (
 );
 
 const Resume = ({ resume }) => (
-  <Layout>
+  <RLayout>
     <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
-        height="600px"
+        height="100%"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
       ></embed>
@@ -56,7 +56,7 @@ width="100%" height="300px"  /> */}
 
 
   
-  </Layout>
+  </RLayout>
 );
 
 export default Resume;
