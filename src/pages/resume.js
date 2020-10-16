@@ -1,6 +1,6 @@
 import React from 'react';
 import RLayout from '../components/RLayout';
-import Section from '../components/Section';
+import RSection from '../components/RSection';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
 import ResumeIMG from './resume/resume.jpg';
@@ -41,14 +41,14 @@ const Resume = ({ resume }) => (
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
       ></embed> */}
 
-    <Section.Container id="Resume" Background={Background}>
+    <RSection.RContainer id="Resume" Background={Background}>
       <embed
         src={ResumePDF}
         type="application/pdf"
-        width="100%"
-        height="100%"
+        // width="100%"
+        // height="100%"
       />
-    </Section.Container>
+    </RSection.RContainer>
 
     {/* <iframe src={ResumePDF}
 width="100%" height="300px"  /> */}
