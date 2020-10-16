@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   *::before { 
     box-sizing: content-box;
     width: 100vw;
+    height: 100vh;
     }
 
   body {

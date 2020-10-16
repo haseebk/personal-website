@@ -7,8 +7,8 @@ import Slide from 'react-reveal/Slide';
 import LinkAnimated from './LinkAnimated';
 
 const RSectionContainer = styled.div`
-//   min-height: 100vh;
-//   min-width: 320px;
+  min-height: 100vh;
+  min-width: 320px;
   max-width: 1366px;
   display: flex;
   margin: auto;
