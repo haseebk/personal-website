@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { RSection } from 'react-scroll-section';
+import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass/styled-components';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
@@ -26,10 +26,10 @@ const RSectionContainer = styled.div`
 const DefaultBackground = () => <div />;
 
 const RContainer = ({ id, children, Background = DefaultBackground }) => (
-  <RSection id={id} style={{ position: 'relative' }}>
+  <Section id={id} style={{ position: 'relative' }}>
     <Background />
     <RSectionContainer>{children}</RSectionContainer>
-  </RSection>
+  </Section>
 );
 
 RContainer.propTypes = {
