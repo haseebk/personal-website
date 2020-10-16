@@ -34,8 +34,8 @@ const Resume = ({ resume }) => (
     <RSection.RContainer id="Resume" Background={Background}>
       <iframe
       
-        // src={ResumePDF}
-        src="/static/Resume.pdf#view=FitV"
+        src={ResumePDF}
+        // src="/static/Resume.pdf#view=FitV"
         type="application/pdf"
         alt="Resume"
         width="100%"
