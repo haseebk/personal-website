@@ -32,12 +32,11 @@ const Background = () => (
 const Resume = ({ resume }) => (
   <RLayout>
     <RSection.RContainer id="Resume" Background={Background}>
-      <embed
+      <iframe
         // src={ResumePDF}
-        src="resume.pdf#view=FitH"
+        src="/resume/resume.pdf#view=FitH"
         type="application/pdf"
         width="100%"
-        // height="100%"
       />
     </RSection.RContainer>
   </RLayout>
