@@ -35,7 +35,7 @@ const Resume = ({ resume }) => (
       <iframe
       
         // src={ResumePDF}
-        src="/static/resume-2124ccc316960f7b0b62a9c9b4c366c4.pdf#view=FitH"
+        src="/static/resume-2124ccc316960f7b0b62a9c9b4c366c4.pdf#view=FitV"
         type="application/pdf"
         alt="Resume"
         width="100%"
