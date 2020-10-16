@@ -40,14 +40,18 @@ const Resume = ({ resume }) => (
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
       ></embed> */}
 
-    <Section.Container id="Resume" Background={Background}>
+    {/* <Section.Container id="Resume" Background={Background}>
       <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
         height="900px"
       />
-    </Section.Container>
+    </Section.Container> */}
+
+<iframe src={ResumePDF}
+// pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+ width="400px" height="300px"  />
   </Layout>
 );
 
