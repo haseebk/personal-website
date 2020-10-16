@@ -33,9 +33,11 @@ const Resume = ({ resume }) => (
   <RLayout>
     <RSection.RContainer id="Resume" Background={Background}>
       <iframe
-        src={ResumePDF}
-        // data=
+      
+        // src={ResumePDF}
+        src="/static/resume-2124ccc316960f7b0b62a9c9b4c366c4.pdf#view=FitH"
         type="application/pdf"
+        alt="Resume"
         width="100%"
       />
     </RSection.RContainer>
