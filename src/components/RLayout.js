@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   *::after,
   *::before { 
     box-sizing: border-box;
+    
     }
 
   body {
