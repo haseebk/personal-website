@@ -13,6 +13,7 @@ const SectionContainer = styled.div`
   display: flex;
   margin: auto;
   flex: 0 1 auto;
+  padding: 2em 1em;
   flex-direction: column;
   justify-content: center;
   padding: 5em 1em;

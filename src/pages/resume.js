@@ -33,7 +33,8 @@ const Resume = ({ resume }) => (
   <RLayout>
     <RSection.RContainer id="Resume" Background={Background}>
       <embed
-        src={ResumePDF}
+        // src={ResumePDF}
+        src="resume.pdf#view=FitH"
         type="application/pdf"
         width="100%"
         // height="100%"

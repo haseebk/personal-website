@@ -9,9 +9,8 @@ import LinkAnimated from './LinkAnimated';
 const RSectionContainer = styled.div`
   min-height: 100vh;
   min-width: 320px;
-//   max-width: 1366px;
   max-width: 100vh;
-display: flex;
+  display: flex;
   margin: auto;
   flex: 0 1 auto;
   justify-content: center;
