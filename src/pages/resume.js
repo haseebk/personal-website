@@ -52,7 +52,7 @@ const Resume = ({ resume }) => (
 <iframe src={ResumePDF}
 // pid=explorer&efh=false&a=v&chrome=false&embedded=true"
  width="100%" 
- style="height: 100vh;"  />
+ style="height: 100vh"  />
   </Layout>
 );
 
