@@ -45,17 +45,13 @@ const Resume = ({ resume }) => (
       <embed
         src={ResumePDF}
         type="application/pdf"
-        width="100vw"
-        height="100vh"
+        width="100%"
+        height="100%"
       />
     </Section.Container>
 
-{/* <iframe src={ResumePDF}
+    {/* <iframe src={ResumePDF}
 width="100%" height="300px"  /> */}
-
-
-
-  
   </RLayout>
 );
 
