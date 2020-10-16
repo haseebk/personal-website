@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import ResumePDF from './resume/resume.pdf';
+import ResumeIMG from './resume/resume.jpg';
 
 const Background = () => (
   <div>
@@ -51,8 +52,7 @@ const Resume = ({ resume }) => (
 
 <iframe src={ResumePDF}
 // pid=explorer&efh=false&a=v&chrome=false&embedded=true"
- width="100%" 
- style="height: 100vh"  />
+width="100%" height="300px"  />
   </Layout>
 );
 
