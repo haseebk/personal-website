@@ -32,14 +32,14 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <Layout>
-    {/* <embed
+    <embed
         src={ResumePDF}
         type="application/pdf"
         width="100%"
         height="600px"
         title="resume"
         data="resume.pdf?#zoom=100&scrollbar=1&toolbar=1&navpanes=0"
-      ></embed> */}
+      ></embed>
 
     {/* <Section.Container id="Resume" Background={Background}>
       <embed
@@ -54,11 +54,7 @@ const Resume = ({ resume }) => (
 width="100%" height="300px"  /> */}
 
 
-<object data={ResumePDF} type="application/pdf" width="700px" height="700px">
-    <embed src={ResumePDF}>
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+
   
   </Layout>
 );
