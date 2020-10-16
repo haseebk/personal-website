@@ -50,9 +50,19 @@ const Resume = ({ resume }) => (
       />
     </Section.Container> */}
 
-<iframe src={ResumePDF}
-// pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-width="100%" height="300px"  />
+{/* <iframe src={ResumePDF}
+width="100%" height="300px"  /> */}
+  <div id="x"></div>
+
+<script>
+var img = document.createElement("img");
+ 
+img.src = {ResumeIMG};
+var src = document.getElementById("x");
+ 
+src.appendChild(img);
+</script>
+  
   </Layout>
 );
 
