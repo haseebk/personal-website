@@ -12,13 +12,12 @@ const GlobalStyle = createGlobalStyle`
   *::after,
   *::before { 
     box-sizing: border-box;
-    
+
     }
 
   body {
     box-sizing: border-box; 
     margin: 0;
-    font-family: Cabin, 'Open Sans', sans-serif;
     overflow-x: hidden;
     width: 100vw;
     height: 50%;
