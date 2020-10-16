@@ -11,16 +11,17 @@ const GlobalStyle = createGlobalStyle`
   *,
   *::after,
   *::before { 
-    box-sizing: inherit;
+    box-sizing: content-box;
+    width: 100vw;
     }
 
   body {
-    box-sizing: border-box; 
+    box-sizing: content-box; 
+    width: 100vw;
     margin: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
   }
