@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Cabin, 'Open Sans', sans-serif;
     overflow-x: hidden;
     width: 100vw;
-    height: 100%;
+    height: 50%;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
   }
