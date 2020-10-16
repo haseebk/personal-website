@@ -45,8 +45,8 @@ const Resume = ({ resume }) => (
       <embed
         src={ResumePDF}
         type="application/pdf"
-        // width="100%"
-        // height="100%"
+        width="100%"
+        height="100%"
       />
     </RSection.RContainer>
 
