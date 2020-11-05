@@ -70,10 +70,19 @@ const Header = () => (
             />
           ));
 
+          const resLink = links.map(({ name, value= "https://www.haseebkhan.ca/resume/"}) => (
+            <RouteLink
+              key="Resume"
+              onClick={value.onClick}
+              selected={value.isSelected}
+              name="Resume"
+            />
+          ));
+
           return (
             <Fragment>
               {homeLink}
-              <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+              <Flex mr={[0, 3, 5]}>{navLinks}{resLink}</Flex>
             </Fragment>
           );
         }}
