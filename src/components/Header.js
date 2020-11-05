@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Headroom from 'react-headroom';
-import { Flex } from 'rebass/styled-components';
+import { Flex, Image } from 'rebass/styled-components';
 import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import RouteLink from './RouteLink';
@@ -61,7 +61,6 @@ const Header = () => (
               }}
             />
           );
-
           const navLinks = links.map(({ name, value }) => (
             <RouteLink
               key={name}
