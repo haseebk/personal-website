@@ -70,11 +70,11 @@ const Header = () => (
             />
           ));
 
-          const resLink = links.map(({ name, value= "https://www.haseebkhan.ca/resume/"}) => (
+          const resLink = links.map(() => (
             <RouteLink
               key="Resume"
-              onClick={value.onClick}
-              selected={value.isSelected}
+              onClick={"https://www.haseebkhan.ca/resume/".onClick}
+              selected={"https://www.haseebkhan.ca/resume/".isSelected}
               name="Resume"
             />
           ));
