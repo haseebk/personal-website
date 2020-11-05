@@ -93,7 +93,6 @@ const Header = () => (
                     Resume
                   </Link>
                 </TextHeader>
-                ;
               </Flex>
             </Fragment>
           );
