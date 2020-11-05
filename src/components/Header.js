@@ -83,19 +83,17 @@ const Header = () => (
             />
           ));
 
-          <TextHeader fontSize={[2, 3]}>
-            <Link href="https://www.haseebkhan.ca/resume" mr={1}>
-                  Resume
-            </Link>
-            
-          </TextHeader>;
-
           return (
             <Fragment>
               {homeLink}
               <Flex mr={[0, 3, 5]}>
                 {navLinks}
-                {TextHeader}
+                <TextHeader fontSize={[2, 3]}>
+                  <Link href="https://www.haseebkhan.ca/resume" mr={1}>
+                    Resume
+                  </Link>
+                </TextHeader>
+                ;
               </Flex>
             </Fragment>
           );
