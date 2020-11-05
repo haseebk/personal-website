@@ -32,8 +32,8 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <RLayout>
-    <RHeader />
     <RSection.RContainer id="Resume" Background={Background}>
+      
       <iframe
       
         // src={ResumePDF}
@@ -43,6 +43,7 @@ const Resume = ({ resume }) => (
         width="100%"
       />
     </RSection.RContainer>
+    <RHeader />
   </RLayout>
 );
 

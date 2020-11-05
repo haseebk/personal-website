@@ -79,10 +79,22 @@ const Header = () => (
             />
           ));
 
+          const test = test && (
+            <Text
+              key="test"
+              onClick={test.onClick}
+              selected={test.isSelected}
+              name="test"
+              style={{
+                cursor: 'pointer',
+              }}
+            />
+          );
+
           return (
             <Fragment>
               {homeLink}
-              <Flex mr={[0, 3, 5]}>{navLinks}{resLink}</Flex>
+              <Flex mr={[0, 3, 5]}>{navLinks}{resLink}{test}</Flex>
             </Fragment>
           );
         }}
