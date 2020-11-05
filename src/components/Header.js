@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Headroom from 'react-headroom';
-import { Text, Box, Link, Flex } from 'rebass/styled-components';
+import { Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import RouteLink from './RouteLink';
@@ -19,19 +19,6 @@ const HeaderContainer = styled(Headroom)`
 
   position: absolute;
   width: 100%;
-`;
-
-const TextHeader = styled(Text)`
-  color: ${(props) => props.theme.colors.background};
-
-  & a {
-    color: ${(props) => props.theme.colors.background};
-    transition: background-color 0.1s ease;
-
-    &:hover {
-      color: ${(props) => props.theme.colors.primaryLight};
-    }
-  }
 `;
 
 const formatLinks = (allLinks) =>
@@ -74,6 +61,7 @@ const Header = () => (
               }}
             />
           );
+
           const navLinks = links.map(({ name, value }) => (
             <RouteLink
               key={name}
@@ -86,19 +74,11 @@ const Header = () => (
           return (
             <Fragment>
               {homeLink}
-              <Flex mr={[0, 3, 5]}>
-                {navLinks}
-                
-              </Flex>
+              <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
             </Fragment>
           );
         }}
       </SectionLinks>
-      <TextHeader fontSize={[2, 3]}>
-                  <Link href="https://www.haseebkhan.ca/resume">
-                    Resume
-                  </Link>
-                </TextHeader>
     </Flex>
   </HeaderContainer>
 );
