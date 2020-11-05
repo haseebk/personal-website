@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Headroom from 'react-headroom';
-import { Flex, Image } from 'rebass/styled-components';
+import { Text, Box, Link, Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import RouteLink from './RouteLink';
@@ -19,6 +19,19 @@ const HeaderContainer = styled(Headroom)`
 
   position: absolute;
   width: 100%;
+`;
+
+const TextHeader = styled(Text)`
+  color: ${(props) => props.theme.colors.background};
+
+  & a {
+    color: ${(props) => props.theme.colors.background};
+    transition: background-color 0.1s ease;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.primaryLight};
+    }
+  }
 `;
 
 const formatLinks = (allLinks) =>
@@ -70,31 +83,20 @@ const Header = () => (
             />
           ));
 
-          const resLink = links.map(() => (
-            <RouteLink
-              key="Resume"
-              onClick={"https://www.haseebkhan.ca/resume/".onClick}
-              selected={"https://www.haseebkhan.ca/resume/".isSelected}
-              name="Resume"
-            />
-          ));
-
-          const test = test && (
-            <Text
-              key="test"
-              onClick={test.onClick}
-              selected={test.isSelected}
-              name="test"
-              style={{
-                cursor: 'pointer',
-              }}
-            />
-          );
+          <TextHeader fontSize={[2, 3]}>
+            <Link href="https://www.haseebkhan.ca/resume" mr={1}>
+                  Resume
+            </Link>
+            
+          </TextHeader>;
 
           return (
             <Fragment>
               {homeLink}
-              <Flex mr={[0, 3, 5]}>{navLinks}{resLink}{test}</Flex>
+              <Flex mr={[0, 3, 5]}>
+                {navLinks}
+                {TextHeader}
+              </Flex>
             </Fragment>
           );
         }}
