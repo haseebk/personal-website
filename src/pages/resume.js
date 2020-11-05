@@ -2,7 +2,7 @@ import React from 'react';
 import RLayout from '../components/RLayout';
 import RSection from '../components/RSection';
 import Triangle from '../components/Triangle';
-import Header from '../components/Header';
+import RHeader from '../components/RHeader';
 import ResumePDF from './resume/resume.pdf';
 
 const Background = () => (
@@ -32,7 +32,7 @@ const Background = () => (
 
 const Resume = ({ resume }) => (
   <RLayout>
-    <Header />
+    <RHeader />
     <RSection.RContainer id="Resume" Background={Background}>
       <iframe
       
