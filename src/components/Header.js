@@ -88,16 +88,17 @@ const Header = () => (
               {homeLink}
               <Flex mr={[0, 3, 5]}>
                 {navLinks}
-                <TextHeader fontSize={[2, 3]}>
-                  <Link href="https://www.haseebkhan.ca/resume" mr={1}>
-                    Resume
-                  </Link>
-                </TextHeader>
+                
               </Flex>
             </Fragment>
           );
         }}
       </SectionLinks>
+      <TextHeader fontSize={[2, 3]}>
+                  <Link href="https://www.haseebkhan.ca/resume">
+                    Resume
+                  </Link>
+                </TextHeader>
     </Flex>
   </HeaderContainer>
 );
