@@ -2,7 +2,7 @@ import React from 'react';
 import RLayout from '../components/RLayout';
 import RSection from '../components/RSection';
 import Triangle from '../components/Triangle';
-import ResumePDF from './resume/resume.pdf#view=Fit';
+import ResumePDF from './resume/resume.pdf';
 
 const Background = () => (
   <div>
