@@ -2,7 +2,7 @@ import React from 'react';
 import RLayout from '../components/RLayout';
 import RSection from '../components/RSection';
 import Triangle from '../components/Triangle';
-import ResumePDF from './resume/resume.pdf';
+import ResumePDF from './resume/resume.pdf#view=Fit';
 
 const Background = () => (
   <div>
@@ -34,8 +34,8 @@ const Resume = ({ resume }) => (
     <RSection.RContainer id="Resume" Background={Background}>
       <iframe
       
-        // src={ResumePDF}
-        src="/static/resume-8cb3b42d6cfd821c5fd499843f6ff050.pdf#view=Fit"
+        src={ResumePDF}
+        // src="/static/resume-8cb3b42d6cfd821c5fd499843f6ff050.pdf#view=Fit"
         // src="/static/resume-eafacdbe81755ae6651a07e0c577c6de.pdf#view=Fit"
         type="application/pdf"
         alt="Resume"
