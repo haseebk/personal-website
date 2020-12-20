@@ -1,5 +1,1 @@
-# Gatsby Starter: Mate
-
-## License 📝
-
-MIT.
+# Personal portfolio site
