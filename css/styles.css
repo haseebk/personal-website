@@ -489,20 +489,23 @@ p {
 
     .home-top-container {
         height: 80%;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        /* overflow-x: hidden;
+        overflow-y: hidden; */
+        overflow: scroll;
+-webkit-overflow-scrolling: touch;
         padding-top: 0%;
         position: relative;
         z-index: 1000;
     }
     .resume-container {
-        overflow-x: hidden;
-        overflow-y: hidden;
+        /* overflow-x: hidden;
+        overflow-y: hidden; */
+        overflow: scroll;
+-webkit-overflow-scrolling: touch;
         height: 100%;
         padding-top: 5%;
         position: relative;
         z-index: 1000;
-        /* animation: 1.0s ease-out 0s 1 slideInFromLeft; */
     
     }
 
