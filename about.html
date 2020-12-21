@@ -32,10 +32,19 @@
       href="/public/favicon-16x16.png"
     />
     <link rel="manifest" href="/public/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="/css/jquery-jvectormap-2.0.5.css"
+      type="text/css"
+      media="screen"
+    />
     <script
       src="https://kit.fontawesome.com/14173d658f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/jquery/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="/jquery/jquery-jvectormap-world-mill.js"></script>
   </head>
 
   <body class="homepage-body">
@@ -107,13 +116,51 @@
     </section>
     <section class="about-top-container">
       <div class="home-top-box">
-        <div class="about-top-image">
-          <img class="top-image" src="/images/walk-away.svg" />
+        <div
+          class="about-top-info"
+          style="animation: 1s ease-out 0s 1 slideInFromLeft"
+        >
+          <h1 class="main-title-header">
+            Places I've
+            <span class="haseeb-title"><strong>been.</strong></span>
+          </h1>
+          <p class="main-info-sub">
+            This is an illustration highlighting the countries that I've visited
+            at some point of my life.
+          </p>
+        </div>
+        <div
+          class="about-top-image"
+          style="animation: 1s ease-out 0s 1 slideInFromRight"
+        >
+          <div
+            id="world-map"
+            style="
+              box-sizing: border-box;
+              margin: 0 auto;
+              max-width: 100%;
+              min-width: 0px;
+              padding: 5%;
+              height: 700px;
+              background-color: transparent;
+              border-radius: 25px;
+            "
+          ></div>
         </div>
       </div>
     </section>
     <footer>
       <div class="rights-reserved">© 2020 Haseeb Khan.</div>
     </footer>
+    <script>
+      $(function () {
+        $("#world-map").vectorMap({
+          map: "world_mill",
+          onRegionTipShow: function (e, el, code) {
+            el.html(el.html());
+          },
+        });
+      });
+    </script>
   </body>
 </html>
