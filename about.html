@@ -134,7 +134,7 @@
           style="animation: 1s ease-out 0s 1 slideInFromRight"
         >
           <div
-            id="world-map"
+            id="world-map-markers"
             style="
               box-sizing: border-box;
               margin: 0 auto;
@@ -155,11 +155,23 @@
     <div class="jvectormap-tip"></div>
     <script>
       $(function () {
-        $("#world-map").vectorMap({
+        $("#world-map-markers").vectorMap({
           map: "world_mill",
-          onRegionTipShow: function (e, el, code) {
-            el.html(el.html());
+          scaleColors: ["#C8EEFF", "#0071A4"],
+          normalizeFunction: "polynomial",
+          hoverOpacity: 0.7,
+          hoverColor: false,
+          markerStyle: {
+            initial: {
+              fill: "#F8E23B",
+              stroke: "#482555",
+            },
           },
+          backgroundColor: "#383f47",
+          markers: [
+            { latLng: [1.3, 103.8], name: "Singapore" },
+            { latLng: [26.02, 50.55], name: "Bahrain" },
+          ],
         });
       });
     </script>
