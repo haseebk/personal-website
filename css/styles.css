@@ -160,6 +160,11 @@ a:hover {
     margin-right: 15px;
 }
 
+.project-links {
+    float: right;
+    margin: 0px 0px 0px 15px;
+}
+
 .main-nav {
     position: fixed;
     width: 100%;
@@ -172,6 +177,14 @@ a:hover {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100%;
+    padding-top: 10%;
+    position: relative;
+    z-index: 1000;
+}
+
+.projects-container {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
     padding-top: 10%;
     position: relative;
     z-index: 1000;
@@ -266,6 +279,42 @@ a:hover {
     border-radius: 25px;
 }
 
+.project-card {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    animation: 1.0s ease-out 0s 1 slideInFromRight;
+    background-color: #292929;
+    box-sizing: border-box;
+    opacity: 1;
+    min-width: 0px;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-size-adjust: 100%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.project-header {
+    /* padding-top: 32px; */
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
 .about-top-info {
     animation: 1s ease-out 0s 1 slideInFromRight;
     box-sizing: border-box;
@@ -319,6 +368,33 @@ a:hover {
     text-align: left;
     text-size-adjust: 100%;
     color: #F5F5F5;
+}
+
+.project-title {
+    box-sizing: border-box;
+    display: block;
+    font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    max-width: 100%;
+    min-width: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    color: #F5F5F5;
+}
+
+.project-subtitle {
+    box-sizing: border-box;
+    display: block;
+    font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 100%;
+    min-width: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    color: #949494;
+    letter-spacing: 1px;
 }
 
 .main-info-sub {
@@ -423,7 +499,7 @@ p {
 
 @media only screen and (max-width: 600px) {
     .html {
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
 
     .home-top-box {
