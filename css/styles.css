@@ -151,6 +151,7 @@ a:hover {
 .main-nav {
     position: fixed;
     width: 100%;
+    height: 83px;
     z-index: 1040;
     background-color: #141414;
 
@@ -169,8 +170,9 @@ a:hover {
 .about-top-container {
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 100%;
+    /* height: 100%; */
     padding-top: 0%;
+    padding-bottom: 5%;
     position: relative;
     z-index: 1000;
 
@@ -189,7 +191,7 @@ a:hover {
 }
 
 .home-top-box {
-    padding-top: 32px;
+    /* padding-top: 32px; */
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -319,10 +321,8 @@ a:hover {
 .main-info-sub {
     color: #F5F5F5;
     text-size-adjust: 100%;
-    padding-right: 50px;
     box-sizing: border-box;
     display: block;
-    /* margin: 20 0 0 0; */
     margin: auto;
     padding-left: 55px;
     padding-bottom: 20px;
@@ -330,7 +330,7 @@ a:hover {
     font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 30px;
     margin: 1em 0 0;
-    max-width: 70%;
+    max-width: 80%;
     font-size: 18px;
     text-align: left;
 }
@@ -423,6 +423,9 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    .html {
+        overflow-y: hidden;
+    }
     .home-top-box {
         display: block;
         padding-top: 5%;
@@ -477,6 +480,7 @@ p {
         padding-bottom: 20px;
         font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
         line-height: 22px;
+        padding-left: 0;
         margin: 1em 0 0;
         max-width: 100%;
         font-size: 18px;
@@ -528,7 +532,7 @@ p {
         width: 100%;
         z-index: 1040;
         background-color: #141414;
-
+        height: auto;
     }
 
     ul {
@@ -537,10 +541,9 @@ p {
     }
 
     .home-top-container {
-        height: 80%;
-        /* overflow-x: hidden;
-        overflow-y: hidden; */
-        overflow-y: scroll;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: initial;
         -webkit-overflow-scrolling: touch;
         padding-top: 0%;
         position: relative;
@@ -548,10 +551,9 @@ p {
     }
 
     .about-top-container {
-        height: 80%;
-        /* overflow-x: hidden;
-        overflow-y: hidden; */
-        overflow-y: scroll;
+        /* height: 100%; */
+        overflow-x: hidden;
+        overflow-y: initial;
         -webkit-overflow-scrolling: touch;
         padding-top: 0%;
         position: relative;
