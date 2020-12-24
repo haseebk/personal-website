@@ -4,7 +4,6 @@ html {
     margin: 0;
     font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     height: 100%;
-
 }
 
 * {
@@ -47,7 +46,6 @@ li {
     margin-left: 0px;
     overflow-x: hidden;
     text-size-adjust: 100%;
-
 }
 
 ol,
@@ -107,27 +105,41 @@ a {
 }
 
 .logo-home-anchor {
-
     font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #F5F5F5;
+    /* color: #F5F5F5; */
     margin: 0px;
     font-size: 18px;
     font-weight: 100;
     text-decoration: none;
+    transition: filter 0.5s linear;
+    /* vendorless fallback */
+    -o-transition: filter 0.5s linear;
+    /* opera */
+    -ms-transition: filter 0.5s linear;
+    /* IE 10 */
+    -moz-transition: filter 0.5s linear;
+    /* Firefox */
+    -webkit-transition: filter 0.5s linear;
+    /*safari and chrome */
 }
 
 .active {
     color: #9F8DA5;
 }
 
-.logo-home-anchor:hover {
+.active-logo {
+    filter: invert(57%) sepia(2%) saturate(2923%) hue-rotate(240deg) brightness(105%) contrast(70%);
+    /* color: #9F8DA5; */
+}
 
-    color: #482555;
+.logo-home-anchor:hover {
+    filter: clear;
+    filter: invert(83%) sepia(21%) saturate(2475%) hue-rotate(246deg) brightness(85%) contrast(92%);
+    /* color: #482555; */
 }
 
 .description-link:hover {
     color: #482555;
-
 }
 
 a:hover {
@@ -139,7 +151,7 @@ a:hover {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-
+    top: 18.5px;
 }
 
 .social-links {
@@ -154,7 +166,6 @@ a:hover {
     height: 83px;
     z-index: 1040;
     background-color: #141414;
-
 }
 
 .home-top-container {
@@ -164,7 +175,6 @@ a:hover {
     padding-top: 10%;
     position: relative;
     z-index: 1000;
-
 }
 
 .about-top-container {
@@ -175,7 +185,6 @@ a:hover {
     padding-bottom: 5%;
     position: relative;
     z-index: 1000;
-
 }
 
 .haseeb-title {
@@ -202,7 +211,6 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 
 .resume-container {
@@ -212,7 +220,6 @@ a:hover {
     padding-top: 5%;
     position: relative;
     z-index: 1000;
-
 }
 
 .resume-box {
@@ -232,7 +239,6 @@ a:hover {
 
 .home-top-info {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
     box-sizing: border-box;
     opacity: 1;
     /* transform: translateY(0px); */
@@ -262,7 +268,6 @@ a:hover {
 
 .about-top-info {
     animation: 1s ease-out 0s 1 slideInFromRight;
-
     box-sizing: border-box;
     opacity: 1;
     /* transform: translateY(0px); */
@@ -298,7 +303,6 @@ a:hover {
     min-width: 0px;
     border-radius: 25px;
     animation: float 6s ease-in-out infinite;
-
 }
 
 .main-title-header {
@@ -306,7 +310,6 @@ a:hover {
     display: block;
     /* margin: 0 0 0 0; */
     margin: auto;
-
     font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 80px;
     font-weight: 500;
@@ -349,7 +352,6 @@ footer {
     width: 100%;
     background-color: #141414;
     z-index: 1000;
-
 }
 
 .rights-reserved {
@@ -365,8 +367,6 @@ p {
     font-size: 15px;
 }
 
-
-
 @keyframes float {
     0% {
         transform: translate(0px, 0px);
@@ -378,7 +378,6 @@ p {
 
     100% {
         transform: translate(0px, 0px);
-
     }
 }
 
@@ -426,6 +425,7 @@ p {
     .html {
         overflow-y: hidden;
     }
+
     .home-top-box {
         display: block;
         padding-top: 5%;
@@ -497,7 +497,6 @@ p {
         width: 100%;
         background-color: #141414;
         z-index: 1000;
-
     }
 
     li a {
@@ -509,9 +508,7 @@ p {
         position: relative;
         left: 0;
         transform: none;
-
         float: none;
-
     }
 
     .logo-home-anchor {
@@ -523,7 +520,6 @@ p {
         font-weight: 100;
         text-decoration: none;
         margin-bottom: 10px;
-
     }
 
     .main-nav {
@@ -569,7 +565,6 @@ p {
         padding-top: 5%;
         position: relative;
         z-index: 1000;
-
     }
 
     a {
@@ -592,6 +587,4 @@ p {
         float: none;
         margin: 0px;
     }
-
-
 }
