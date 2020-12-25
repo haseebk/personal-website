@@ -129,21 +129,19 @@ a {
 
 .active-logo {
     filter: invert(57%) sepia(2%) saturate(2923%) hue-rotate(240deg) brightness(105%) contrast(70%);
-    /* color: #9F8DA5; */
 }
 
 .logo-home-anchor:hover {
     filter: clear;
-    filter: invert(83%) sepia(21%) saturate(2475%) hue-rotate(246deg) brightness(85%) contrast(92%);
-    /* color: #482555; */
+    filter: invert(64%) sepia(13%) saturate(2547%) hue-rotate(240deg) brightness(90%) contrast(93%);
 }
 
 .description-link:hover {
-    color: #482555;
+    color: #824398;
 }
 
 a:hover {
-    color: #482555;
+    color: #824398;
 }
 
 .logo-home {
@@ -209,7 +207,7 @@ a:hover {
     max-width: 100%;
     min-width: 0px;
     text-size-adjust: 100%;
-    color: #482555;
+    color: #824398;
 }
 
 .home-top-box {
@@ -655,7 +653,7 @@ p {
     }
 
     a:hover {
-        color: #482555;
+        color: #824398;
     }
 
     .social-links {
