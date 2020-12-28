@@ -626,7 +626,7 @@ p {
     .home-top-container {
         /* height: 100%; */
         overflow-x: hidden;
-        overflow-y: initial;
+        overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         padding-top: 0%;
         position: relative;
