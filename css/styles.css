@@ -304,6 +304,7 @@ a:hover {
     padding-bottom: 0px;
     padding-left: 0px;
     padding-top: 35px;
+    padding-bottom: 35px;
     box-sizing: border-box;
     max-width: 90%;
     margin: 0 auto;
@@ -496,9 +497,6 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-    .html {
-        /* overflow-y: hidden; */
-    }
 
     .home-top-box {
         display: block;
@@ -551,7 +549,7 @@ p {
         box-sizing: border-box;
         display: inline-block;
         font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 500;
         max-width: 100%;
         min-width: 0px;
