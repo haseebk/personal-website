@@ -32,10 +32,19 @@ li {
 #list {
     padding-left: 55px;
     color: #F5F5F5;
+    list-style-type: circle;
 }
 
 .specs {
     display: list-item;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: Biotif-Bold,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+
 }
 
 .homepage-body {
