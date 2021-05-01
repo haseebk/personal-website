@@ -14,7 +14,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png" />
     <link rel="manifest" href="/public/site.webmanifest" />
-    <link rel="stylesheet" href="/css/jquery-jvectormap-2.0.5.css" type="text/css" media="screen" />
     <script src="https://kit.fontawesome.com/14173d658f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,15 +21,16 @@
     <header class="main-nav">
         <nav class="c-main-nav">
             <ul>
-                <li><a href="">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a class="active" href="setup.html">Setup</a></li>
+                <li><a class="active" href="">Setup</a></li>
                 <li>
                     <a href="/public/resume.pdf?#zoom=80&scrollbar=0&navpanes=0&toolbar=0&view=Fit"
                         target="_blank">Resume</a>
                 </li>
                 <li class="logo-home">
-                    <a class="logo-home-anchor" href="index.html"><img src="/public/icons/logo.svg" height="41px" /></a>
+                    <a class="logo-home-anchor active-logo" href="/"><img src="/public/icons/logo.svg"
+                            height="41px" /></a>
                 </li>
                 <li class="social-links">
                     <a href="https://www.linkedin.com/in/k-haseeb/" target="_blank"><i
@@ -42,68 +42,31 @@
             </ul>
         </nav>
     </header>
-
     <section class="home-top-container">
         <div class="home-top-box">
-            <div class="about-top-image">
-                <img class="top-image" src="/images/desk-sit.svg" />
-            </div>
-            <div class="about-top-info">
+            <div class="home-top-info">
                 <h1 class="main-title-header">
-                    Haseeb Khan<br />
-                    <span class="haseeb-title">Software Engineer.</span>
+                    Still under
+                    <span class="haseeb-title">construction!</span>
                 </h1>
                 <p class="main-info-sub">
-                    Hey, I'm a software engineering student based in Calgary, AB. I'm
-                    currently in my third year at the
-                    <a class="description-link" target="_blank" href="https://www.ucalgary.ca/">University of
-                        Calgary</a>.
-                    <br />
-                    <br />
-                    I enjoy facing new challenges and learning from them on a daily
-                    basis. I find that working on a project is one of my best ways to
-                    learn a new technology. This is why when I'm not busy doing
-                    school-work, you'll either find me working on one of my
-                    <a class="description-link" href="projects.html">projects</a>, or
-                    just relaxing by playing games like League of Legends or Valorant.
-                    <br />
-                    <br />
-                    I also love to travel! My next travel plan is to re-visit Singapore
-                    (where I was supposed to study abroad at
-                    <a class="description-link" target="_blank" href="https://www.ntu.edu.sg/Pages/home.aspx">NTU</a>
-                    before COVID-19 struck 😔).
+                    I'm still working on this section. Feel free to take a look at my
+                    <a class="description-link"
+                        href="/public/resume.pdf?#zoom=80&scrollbar=0&navpanes=0&toolbar=0&view=Fit"
+                        target="_blank">resume</a>
+                    or
+                    <a class="description-link" href="https://github.com/haseebk/" target="_blank">GitHub</a>
+                    in the meantime!
                 </p>
+            </div>
+            <div class="home-top-image">
+                <img class="top-image" src="/images/under-construction.svg" />
             </div>
         </div>
     </section>
+    <section class="home-top-container">
 
-    <section class="about-top-container">
-        <div class="home-top-box">
-            <div class="about-top-info" style="animation: 1s ease-out 0s 1 slideInFromLeft">
-                <h1 class="main-title-header">
-                    Places I've
-                    <span class="haseeb-title">been.</span>
-                </h1>
-                <p class="main-info-sub">
-                    This map highlights the different places that I've visited at some
-                    point of my life.
-                </p>
-            </div>
-            <div class="about-top-image" style="animation: 1s ease-out 0s 1 slideInFromRight">
-                <div id="world-map-markers" style="
-              box-sizing: border-box;
-              margin: 0 auto;
-              max-width: 100%;
-              min-width: 0px;
-              padding: 5%;
-              height: 700px;
-              background-color: transparent;
-              border-radius: 25px;
-            "></div>
-            </div>
-        </div>
     </section>
-
     <footer>
         <div class="rights-reserved">© 2021 Haseeb Khan.</div>
     </footer>
