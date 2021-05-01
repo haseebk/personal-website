@@ -29,6 +29,15 @@ li {
     display: inline;
 }
 
+#list {
+    padding-left: 55px;
+    color: #F5F5F5;
+}
+
+.specs {
+    display: list-item;
+}
+
 .homepage-body {
     background-attachment: scroll;
     background-clip: border-box;
