@@ -16,7 +16,7 @@ svg {
     display: none;
     border: solid 1px #CDCDCD;
     border-radius: 3px;
-    background: #292929;
+    background: #E0E0E0;
     color: white;
     font-family: sans-serif, Verdana;
     font-size: smaller;
@@ -24,11 +24,13 @@ svg {
     z-index: 1001;
 }
 
-.jvectormap-zoomin, .jvectormap-zoomout, .jvectormap-goback {
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
     position: absolute;
     left: 10px;
     border-radius: 3px;
-    background: #292929;
+    background: #E0E0E0;
     padding: 3px;
     color: white;
     cursor: pointer;
@@ -37,7 +39,8 @@ svg {
     box-sizing: content-box;
 }
 
-.jvectormap-zoomin, .jvectormap-zoomout {
+.jvectormap-zoomin,
+.jvectormap-zoomout {
     width: 10px;
     height: 10px;
 }
