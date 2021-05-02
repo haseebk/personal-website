@@ -289,7 +289,8 @@ a:hover {
 
 .home-top-image {
     animation: 1.0s ease-out 0s 1 slideInFromRight;
-    background-color: #292929;
+    /* background-color: #292929; */
+    background-color: #E0E0E0;
     box-sizing: border-box;
     opacity: 1;
     /* transform: translateY(0px); */
@@ -312,7 +313,8 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 5%;
     animation: 1.0s ease-out 0s 1 slideInFromRight;
-    background-color: #292929;
+    /* background-color: #292929; */
+    background-color: #E0E0E0;
     box-sizing: border-box;
     opacity: 1;
     min-width: 0px;
@@ -355,7 +357,8 @@ a:hover {
 
 .about-top-image {
     animation: 1.0s ease-out 0s 1 slideInFromLeft;
-    background-color: #292929;
+    /* background-color: #292929; */
+    background-color: #E0E0E0;
     box-sizing: border-box;
     opacity: 1;
     /* transform: translateY(0px); */
@@ -682,7 +685,8 @@ p {
         margin: 0 auto;
         margin-bottom: 5%;
         animation: 1.0s ease-out 0s 1 slideInFromRight;
-        background-color: #292929;
+        /* background-color: #292929; */
+        background-color: #E0E0E0;
         box-sizing: border-box;
         opacity: 1;
         min-width: 0px;
