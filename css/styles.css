@@ -1,8 +1,5 @@
-body,
 html {
-    margin: 0;
-    font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
-    height: 100%;
+
 
     --light-text-color: #141414;
     --link-color: #9F8DA5;
@@ -10,6 +7,16 @@ html {
     --secondary-background-color: #E0E0E0;
     --main-text-color: #824398;
     --subtitle-text-color: #949494;
+}
+
+body {
+    margin: 0;
+    font-family: Biotif-Bold,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+    height: 100%;
     background-color: var(--main-background-color);
 }
 
@@ -477,7 +484,6 @@ p {
         --main-background-color: #141414;
         --secondary-background-color: #292929;
         --main-text-color: #824398;
-        background-color: var(--main-background-color);
     }
 }
 
