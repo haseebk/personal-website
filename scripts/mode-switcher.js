@@ -8,7 +8,7 @@ let theme = sessionStorage.getItem("theme");
 if (systemInitiatedDark.matches) {
   document.getElementById(
     "theme-toggle"
-  ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
+  ).innerHTML = `<i class="fab fa-sun fa-2x"></i>`;
 } else {
   document.getElementById(
     "theme-toggle"
