@@ -8,11 +8,11 @@ let theme = sessionStorage.getItem("theme");
 if (systemInitiatedDark.matches) {
   document.getElementById(
     "theme-toggle"
-  ).innerHTML = `<i class="far fa-sun fa-2x"></i>`;
+  ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
 } else {
   document.getElementById(
     "theme-toggle"
-  ).innerHTML = `<i class="far fa-moon fa-2x"></i>`;
+  ).innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
 }
 
 function prefersColorTest(systemInitiatedDark) {
@@ -20,14 +20,14 @@ function prefersColorTest(systemInitiatedDark) {
     document.documentElement.setAttribute("data-theme", "dark");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-sun fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
 
     sessionStorage.setItem("theme", "");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-moon fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
     sessionStorage.setItem("theme", "");
   }
 }
@@ -40,25 +40,25 @@ function modeSwitcher() {
     sessionStorage.setItem("theme", "light");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-moon fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
   } else if (theme === "light") {
     document.documentElement.setAttribute("data-theme", "dark");
     sessionStorage.setItem("theme", "dark");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-sun fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
   } else if (systemInitiatedDark.matches) {
     document.documentElement.setAttribute("data-theme", "light");
     sessionStorage.setItem("theme", "light");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-moon fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
     sessionStorage.setItem("theme", "dark");
     document.getElementById(
       "theme-toggle"
-    ).innerHTML = `<i class="far fa-sun fa-2x"></i>`;
+    ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
   }
 }
 
@@ -67,11 +67,11 @@ if (theme === "dark") {
   sessionStorage.setItem("theme", "dark");
   document.getElementById(
     "theme-toggle"
-  ).innerHTML = `<i class="far fa-sun fa-2x"></i>`;
+  ).innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
 } else if (theme === "light") {
   document.documentElement.setAttribute("data-theme", "light");
   sessionStorage.setItem("theme", "light");
   document.getElementById(
     "theme-toggle"
-  ).innerHTML = `<i class="far fa-moon fa-2x"></i>`;
+  ).innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
 }
