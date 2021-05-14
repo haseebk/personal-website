@@ -477,6 +477,7 @@ p {
         --main-background-color: #141414;
         --secondary-background-color: #292929;
         --main-text-color: #824398;
+        background-color: var(--main-background-color);
     }
 }
 
