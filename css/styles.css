@@ -1,6 +1,5 @@
 body,
 html {
-    background-color: var(--main-background-color);
     margin: 0;
     font-family: Biotif-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     height: 100%;
@@ -11,6 +10,7 @@ html {
     --secondary-background-color: #E0E0E0;
     --main-text-color: #824398;
     --subtitle-text-color: #949494;
+    background-color: var(--main-background-color);
 }
 
 * {
