@@ -8,23 +8,20 @@ let theme = sessionStorage.getItem("theme");
 if (systemInitiatedDark.matches) {
   document.getElementById("theme-toggle").lastChild.class = "far fa-sun fa-2x";
 } else {
-  document.getElementById("theme-toggle").innerHTML = (
-    <i class="far fa-moon fa-2x"></i>
-  );
+  document.getElementById("theme-toggle").lastChild.class = "far fa-moon fa-2x";
 }
 
 function prefersColorTest(systemInitiatedDark) {
   if (systemInitiatedDark.matches) {
     document.documentElement.setAttribute("data-theme", "dark");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-sun fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-sun fa-2x";
     sessionStorage.setItem("theme", "");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-moon fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-moon fa-2x";
+
     sessionStorage.setItem("theme", "");
   }
 }
@@ -35,40 +32,32 @@ function modeSwitcher() {
   if (theme === "dark") {
     document.documentElement.setAttribute("data-theme", "light");
     sessionStorage.setItem("theme", "light");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-moon fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-moon fa-2x";
   } else if (theme === "light") {
     document.documentElement.setAttribute("data-theme", "dark");
     sessionStorage.setItem("theme", "dark");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-sun fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-sun fa-2x";
   } else if (systemInitiatedDark.matches) {
     document.documentElement.setAttribute("data-theme", "light");
     sessionStorage.setItem("theme", "light");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-moon fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-moon fa-2x";
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
     sessionStorage.setItem("theme", "dark");
-    document.getElementById("theme-toggle").innerHTML = (
-      <i class="far fa-sun fa-2x"></i>
-    );
+    document.getElementById("theme-toggle").lastChild.class =
+      "far fa-sun fa-2x";
   }
 }
 
 if (theme === "dark") {
   document.documentElement.setAttribute("data-theme", "dark");
   sessionStorage.setItem("theme", "dark");
-  document.getElementById("theme-toggle").innerHTML = (
-    <i class="far fa-sun fa-2x"></i>
-  );
+  document.getElementById("theme-toggle").lastChild.class = "far fa-sun fa-2x";
 } else if (theme === "light") {
   document.documentElement.setAttribute("data-theme", "light");
   sessionStorage.setItem("theme", "light");
-  document.getElementById("theme-toggle").innerHTML = (
-    <i class="far fa-moon fa-2x"></i>
-  );
+  document.getElementById("theme-toggle").lastChild.class = "far fa-moon fa-2x";
 }
