@@ -6,9 +6,7 @@ let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
 let theme = sessionStorage.getItem("theme");
 
 if (systemInitiatedDark.matches) {
-  document.getElementById("theme-toggle").innerHTML = (
-    <i class="far fa-sun fa-2x"></i>
-  );
+  document.getElementById("theme-toggle").lastChild.class = "far fa-sun fa-2x";
 } else {
   document.getElementById("theme-toggle").innerHTML = (
     <i class="far fa-moon fa-2x"></i>
