@@ -233,7 +233,7 @@ a:hover {
     display: block;
 }
 
-.dropdown:hover .dropdown {
+.dropdown:hover {
     width: 100%
 }
 
