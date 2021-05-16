@@ -234,18 +234,15 @@ a:hover {
     display: block;
 }
 
-.dropdown:hover,
-.dropdown:active {
+.dropdown:hover {
     width: 100%
 }
 
-.dropdown:hover,
-.dropdown:active .logo-home {
+.dropdown:hover.logo-home {
     display: none;
 }
 
-.dropdown:hover,
-.dropdown:active .dropdown-links {
+.dropdown:hover .dropdown-links {
     display: block;
 }
 
