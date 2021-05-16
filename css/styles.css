@@ -733,21 +733,6 @@ p {
         height: auto;
     }
 
-    .dropdown:hover,
-    .dropdown:active {
-        width: 100%
-    }
-
-    .dropdown:hover,
-    .dropdown:active~.logo-home {
-        display: none;
-    }
-
-    .dropdown:hover,
-    .dropdown:active .dropdown-links {
-        display: block;
-    }
-
     ul {
         max-width: 90%;
         margin: 0 auto;
