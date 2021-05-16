@@ -222,6 +222,7 @@ a:hover {
 
 .dropbtn {
     font-size: 13px;
+    cursor: pointer;
 }
 
 .dropdown-links {
@@ -234,17 +235,22 @@ a:hover {
     display: block;
 }
 
+.show {
+    display: block;
+}
+
+
 .dropdown:hover {
     width: 100%
 }
 
-.dropdown:hover.logo-home {
+.dropdown:hover .logo-home {
     display: none;
 }
 
-.dropdown:hover .dropdown-links {
+/* .dropdown:hover .dropdown-links {
     display: block;
-}
+} */
 
 .home-top-container {
     overflow-x: hidden;
