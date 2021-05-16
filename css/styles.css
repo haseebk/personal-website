@@ -775,9 +775,9 @@ p {
         color: var(--main-text-color);
     }
 
-    .social-links {
+    /* .social-links {
         display: none;
         float: none;
         margin: 0px;
-    }
+    } */
 }
