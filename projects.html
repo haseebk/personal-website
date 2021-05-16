@@ -18,8 +18,8 @@
 </head>
 
 <body class="homepage-body">
-  <header class="main-nav">
-    <nav class="c-main-nav">
+  <header>
+    <nav class="main-nav">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a class="active" href="">Projects</a></li>
@@ -37,6 +37,25 @@
         </li>
         <li class="social-links">
           <a href="https://github.com/haseebk/" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <ul>
+        <!-- dropdown -->
+        <div class="dropdown">
+          <a class="dropbtn"><i class="fas fa-bars fa-2x"></i></a>
+          <div class="dropdown-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="setup.html">Setup</a>
+            <a href="/public/resume.pdf?#zoom=80&scrollbar=0&navpanes=0&toolbar=0&view=Fit" target="_blank">Resume</a>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <li class="logo-home">
+          <a class="logo-home-anchor active-logo" href="/"><img src="/public/icons/logo.svg" height="41px" /></a>
         </li>
       </ul>
     </nav>
