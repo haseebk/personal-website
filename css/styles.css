@@ -239,23 +239,11 @@ a:hover {
     width: 100%
 }
 
-.dropdown:hover .logo-home {
+.dropdown:hover~.logo-home {
     display: none;
 }
 
 .dropdown:hover .dropdown-links {
-    display: block;
-}
-
-.dropbtn:hover .dropdown {
-    width: 100%
-}
-
-.dropbtn:hover~.logo-home {
-    display: none;
-}
-
-.dropbtn:hover .dropdown-links {
     display: block;
 }
 
