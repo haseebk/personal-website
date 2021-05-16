@@ -238,6 +238,10 @@ a:hover {
     width: 100%
 }
 
+.dropdown:hover .logo-home {
+    display: none;
+}
+
 .dropdown:hover .dropdown-links {
     display: block;
 }
