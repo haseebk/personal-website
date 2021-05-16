@@ -235,11 +235,6 @@ a:hover {
     display: block;
 }
 
-.show {
-    display: block;
-}
-
-
 .dropdown:hover {
     width: 100%
 }
@@ -248,9 +243,9 @@ a:hover {
     display: none;
 }
 
-/* .dropdown:hover .dropdown-links {
+.dropdown:hover .dropdown-links {
     display: block;
-} */
+}
 
 .home-top-container {
     overflow-x: hidden;
@@ -724,6 +719,21 @@ p {
         z-index: 1040;
         background-color: var(--main-background-color);
         height: auto;
+    }
+
+    .dropdown:hover,
+    .dropdown:active {
+        width: 100%
+    }
+
+    .dropdown:hover,
+    .dropdown:active .logo-home {
+        display: none;
+    }
+
+    .dropdown:hover,
+    .dropdown:active .dropdown-links {
+        display: block;
     }
 
     ul {
