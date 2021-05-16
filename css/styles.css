@@ -229,6 +229,7 @@ a:hover {
     display: none;
     padding-top: 10px;
     position: absolute;
+    width: 100%;
     background: var(--main-background-color);
 }
 
