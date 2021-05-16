@@ -227,8 +227,9 @@ a:hover {
 
 .dropdown-links {
     display: none;
-    padding-top: 5%;
-    /* position: absolute; */
+    padding-top: 10px;
+    position: absolute;
+    background: var(--main-background-color);
 }
 
 .dropdown-links a {
