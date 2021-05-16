@@ -237,6 +237,10 @@ a:hover {
     display: block;
 }
 
+.dropdown-links:hover a {
+    background-color: var(--link-color);
+}
+
 .dropdown:hover {
     width: 100%
 }
