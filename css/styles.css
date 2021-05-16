@@ -218,7 +218,10 @@ a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 100%
+}
+
+.dropbtn {
+    font-size: 13px;
 }
 
 .dropdown-links {
@@ -228,6 +231,10 @@ a:hover {
 
 .dropdown-links a {
     display: block;
+}
+
+.dropdown:hover .dropdown {
+    width: 100%
 }
 
 .dropdown:hover .dropdown-links {
