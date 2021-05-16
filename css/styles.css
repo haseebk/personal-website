@@ -220,6 +220,11 @@ a:hover {
     background-color: var(--main-background-color);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .home-top-container {
     overflow-x: hidden;
     overflow-y: hidden;
