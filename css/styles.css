@@ -251,7 +251,7 @@ a:hover {
     width: 100%
 }
 
-.dropbtn:hover .logo-home {
+.dropbtn:hover~.logo-home {
     display: none;
 }
 
@@ -739,7 +739,7 @@ p {
     }
 
     .dropdown:hover,
-    .dropdown:active .logo-home {
+    .dropdown:active~.logo-home {
         display: none;
     }
 
