@@ -225,6 +225,19 @@ a:hover {
     display: inline-block;
 }
 
+.dropdown-links {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-links a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-links {
+    display: block;
+}
+
 .home-top-container {
     overflow-x: hidden;
     overflow-y: hidden;
