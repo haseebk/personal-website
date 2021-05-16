@@ -667,13 +667,13 @@ p {
         display: block;
     }
 
-    .logo-home {
+    /* .logo-home {
         display: none;
         position: relative;
         left: 0;
         transform: none;
         float: none;
-    }
+    } */
 
     .logo-home-anchor {
         text-align: center;
