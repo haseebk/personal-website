@@ -298,7 +298,7 @@ a:hover {
 }
 
 .mobile-nav .dropdown-icon .navicon {
-    background: #333;
+    background: var(--light-text-color);
     display: block;
     height: 2px;
     position: relative;
@@ -308,7 +308,7 @@ a:hover {
 
 .mobile-nav .dropdown-icon .navicon:before,
 .mobile-nav .dropdown-icon .navicon:after {
-    background: #333;
+    background: var(--light-text-color);
     content: '';
     display: block;
     height: 100%;
