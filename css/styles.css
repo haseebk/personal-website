@@ -328,7 +328,7 @@ a:hover {
     display: none;
 }
 
-.mobile-nav .dropdown-btn:checked~.dropdown {
+.mobile-nav .dropdown-btn:checked~.dropdown-menu {
     max-height: 240px;
 }
 
