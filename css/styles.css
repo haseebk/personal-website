@@ -291,7 +291,7 @@ a:hover {
 .mobile-nav .dropdown-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
+    float: left;
     padding: 28px 20px;
     position: relative;
     user-select: none;
