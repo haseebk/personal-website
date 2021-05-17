@@ -829,28 +829,6 @@ p {
         height: auto;
     }
 
-    /* testing */
-
-    .mobile-nav li {
-        float: left;
-    }
-
-    .mobile-nav li a {
-        padding: 20px 30px;
-    }
-
-    .mobile-nav .dropdown {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .mobile-nav .dropdown-icon {
-        display: none;
-    }
-
-    /* testing */
-
     ul {
         max-width: 90%;
         margin: 0 auto;
