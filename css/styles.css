@@ -306,6 +306,10 @@ a:hover {
     width: 18px;
 }
 
+.mobile-nav .dropdown-icon:hover {
+    background: var(--secondary-background-color);
+}
+
 .mobile-nav .dropdown-icon .navicon:before,
 .mobile-nav .dropdown-icon .navicon:after {
     background: var(--light-text-color);
