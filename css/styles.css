@@ -270,20 +270,13 @@ a:hover {
     background-color: var(--secondary-background-color);
 }
 
-.mobile-nav .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
 /* dropdown */
 
 .mobile-nav .dropdown-menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    z-index: 1006;
 }
 
 /* dropdown icon */
