@@ -251,11 +251,43 @@ a:hover {
 
 /* testing */
 
-.mobile-nav .dropdown-menu {
+.mobile-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.mobile-nav li a:hover,
+.mobile-nav .dropdown-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.mobile-nav .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* dropdown */
+
+.mobile-nav .dropdown {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
+
+/* dropdown icon */
 
 .mobile-nav .dropdown-icon {
     cursor: pointer;
@@ -294,11 +326,13 @@ a:hover {
     top: -5px;
 }
 
+/* dropdown btn */
+
 .mobile-nav .dropdown-btn {
     display: none;
 }
 
-.mobile-nav .dropdown-btn:checked~.dropdown-menu {
+.mobile-nav .dropdown-btn:checked~.dropdown {
     max-height: 240px;
 }
 
@@ -797,7 +831,15 @@ p {
 
     /* testing */
 
-    .mobile-nav .dropdown-menu {
+    .mobile-nav li {
+        float: left;
+    }
+
+    .mobile-nav li a {
+        padding: 20px 30px;
+    }
+
+    .mobile-nav .dropdown {
         clear: none;
         float: right;
         max-height: none;
