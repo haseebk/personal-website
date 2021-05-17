@@ -254,6 +254,7 @@ a:hover {
 .mobile-nav ul {
     margin: 0;
     padding: 0;
+    max-width: 100%;
     list-style: none;
     overflow: hidden;
     background-color: var(--main-background-color);
