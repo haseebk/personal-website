@@ -249,6 +249,78 @@ a:hover {
     display: block;
 }
 
+/* testing */
+
+.mobile-nav .dropdown-menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.mobile-nav .dropdown-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.mobile-nav .dropdown-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.mobile-nav .dropdown-icon .navicon:before,
+.mobile-nav .dropdown-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.mobile-nav .dropdown-icon .navicon:before {
+    top: 5px;
+}
+
+.mobile-nav .dropdown-icon .navicon:after {
+    top: -5px;
+}
+
+.mobile-nav .dropdown-btn {
+    display: none;
+}
+
+.mobile-nav .dropdown-btn:checked~.dropdown-menu {
+    max-height: 240px;
+}
+
+.mobile-nav .dropdown-btn:checked~.dropdown-icon .navicon {
+    background: transparent;
+}
+
+.mobile-nav .dropdown-btn:checked~.dropdown-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav .dropdown-btn:checked~.dropdown-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.mobile-nav .dropdown-btn:checked~.dropdown-icon:not(.steps) .navicon:before,
+.mobile-nav .dropdown-btn:checked~.dropdown-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* testing */
+
 .home-top-container {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -722,6 +794,20 @@ p {
         background-color: var(--main-background-color);
         height: auto;
     }
+
+    /* testing */
+
+    .mobile-nav .dropdown-menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .mobile-nav .dropdown-icon {
+        display: none;
+    }
+
+    /* testing */
 
     ul {
         max-width: 90%;

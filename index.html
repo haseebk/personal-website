@@ -38,23 +38,24 @@
       </ul>
     </nav>
     <nav class="mobile-nav">
-      <ul>
-        <!-- dropdown -->
-        <div class="dropdown">
-          <a class="dropbtn"><i class="fas fa-bars fa-2x"></i></a>
-          <div class="dropdown-links">
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="setup.html">Setup</a>
-            <a href="/public/resume.pdf?#zoom=80&scrollbar=0&navpanes=0&toolbar=0&view=Fit" target="_blank">Resume</a>
-          </div>
-        </div>
+      <!-- logo -->
+      <a class="logo-home-anchor active-logo" href="/"><img src="/public/icons/logo.svg" height="41px" /></a>
 
-        <!-- logo -->
-        <li class="logo-home">
-          <a class="logo-home-anchor active-logo" href="/"><img src="/public/icons/logo.svg" height="41px" /></a>
+      <!-- dropdown -->
+      <input class="dropdown-btn" type="checkbox" id="menu-btn" />
+      <label class="dropdown-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="dropdown-menu">
+        <li> <a href="about.html">About</a>
         </li>
-      </ul>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="setup.html">Setup</a>
+        </li>
+        <li>
+          <a href="/public/resume.pdf?#zoom=80&scrollbar=0&navpanes=0&toolbar=0&view=Fit" target="_blank">Resume</a>
+        </li>
     </nav>
   </header>
   <section class="home-top-container">
