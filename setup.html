@@ -133,9 +133,13 @@
     </section>
 
     <footer>
-        <div class="rights-reserved">© 2021 Haseeb Khan.</div>
+        <div class="rights-reserved">© <span id="year"></span> Haseeb Khan.</div>
     </footer>
     <script src="/scripts/mode-switcher.js"></script>
+    <script>
+        let year = new Date().getFullYear();
+        document.getElementById("year").innerHTML = year;
+    </script>
 
 </body>
 

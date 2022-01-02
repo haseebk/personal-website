@@ -136,9 +136,10 @@
   </section>
 
   <footer>
-    <div class="rights-reserved">© 2021 Haseeb Khan.</div>
+    <div class="rights-reserved">© <span id="year"></span> Haseeb Khan.</div>
   </footer>
-  <div class="jvectormap-tip"></div>
+  <div class="jvectormap-tip">
+  </div>
   <script>
     $(function () {
       $("#world-map-markers").vectorMap({
@@ -202,7 +203,10 @@
     });
   </script>
   <script src="/scripts/mode-switcher.js"></script>
-
+  <script>
+    let year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
+  </script>
 </body>
 
 </html>
